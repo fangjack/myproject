@@ -1,0 +1,66 @@
+/*header*/
+header {
+    display: inline-block;
+    width: 100%;
+    background-color: #212121;
+    text-align: center;
+    height: 88px;
+    line-height: 88px;
+    position: relative;
+}
+.w1200 {
+    display: inline-block;
+    width: 1200px;
+}
+.topLeft {
+    float: left;
+    width: 300px;
+}
+.topRight {
+    float: right;
+    width: 900px;
+}
+.logoBox {
+    height: 49px;
+    margin-top: 15px;
+}
+.topLeft .logoBox a {
+    color: #333333;
+}
+.topLeft .logoBox a img {display: block}
+.topRight .topTitle {
+    height: 40px;
+    line-height: 45px;
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+}
+.topRight .topTitle p { font-weight:bold;}
+.topRight .topTitle a { margin-left: 10px; color: #fff;}
+.topRight .topTitle a:hover {color: #0d68af;}
+.topRight ul {float: right; font-size: 16px}
+.topRight ul li {
+    float: left;
+    margin-left: 30px;
+    height: 48px;
+    line-height: 48px;
+}
+.topRight ul li a {
+    padding: 0 10px;
+    display: block;
+    color: #fff;
+}
+.topRight ul li a:hover {
+    color: #0d68af;
+    background: #fff;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+}
+
+ /*-- Swiper --*/
+
+
+
+
+
+
+
