@@ -1,0 +1,72 @@
+.bann {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.bann img { display: block; }
+.pot_crumbs {
+    position: absolute;
+    bottom: 10px;
+    left: 12%;
+    color: #fff;
+}
+.pot_crumbs a { color: #fff; }
+
+.pobox { background: #f7f8fa; padding: 20px 0;}
+.wm-1200 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+.photo_box { width: 1200px!important; }
+.xs-list-search .been-tj {
+    width: 100%;
+    overflow: hidden;
+}
+.xs-list-search .been-tj strong {
+    min-height: 24px;
+    float: left;
+    color: #ff8a00;
+    font-size: 18px;
+    font-weight: normal;
+}
+.xs-list-search .been-tj p {
+    float: left;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px 10px 0;
+}
+.xs-list-search .been-tj p a {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    background: #666;
+    color: #fff;
+    padding: 0 10px;
+}
+/*-- 条件搜索 --*/
+.photolist-con {
+    float: left;
+    width: 1200px;
+    margin-top: 20px;
+}
+.st-photolist {
+    width: 1200px;
+}
+.main_mod_page .next { background: url(../imgs/WonderfulReview/page_next_bg.png) center no-repeat; }
+.main_mod_page .go-last { background: url(../imgs/WonderfulReview/page_last_bg.png) 0 center no-repeat; }
+.main_mod_page .next:hover { background: url(../imgs/WonderfulReview/page_next_bg_hover.png) center no-repeat; }
+
+
+
+
+
+
+
+
+
+

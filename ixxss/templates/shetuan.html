@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行行摄色推出伊朗摄影团花絮，欢迎全国摄影爱好者一起出国摄影采风！
+        -行行摄色,国外摄影,摄影团，旅游摄影</title>
+    <link rel="stylesheet" href="../css/ylsy.css">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.css"/>
+    <link rel="stylesheet" href="../styleshee/iconfont.css">
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/css1.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/myPop.css" />
+</head>
+<body >
+<div class="body-box">
+<header>
+    <div class="topBox w1200">
+        <div class="topLeft">
+            <div class="logoBox">
+                <a href="#">
+                    <img src="http://www.ixxss.net/res/img/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="topRight">
+            <div class="topTitle">
+                <b>服务电话：40066-51731</b>
+                <span id="LandingAndEnroll">
+                    <a style="margin-left: 20px;" href="#">登录</a>
+                    <a href="#">注册</a>
+                </span>
+            </div>
+            <ul>
+                <li><a href="#" target="_blank">去摄影</a></li>
+                <li><a href="#" target="_blank">找老师</a></li>
+                <li><a href="#" target="_blank">看花絮</a></li>
+                <li><a href="#" target="_blank" style="color:#ff8a00;font-weight:bold;">行摄学院</a></li>
+                <li><a href="#" target="_blank">行摄摄友会</a></li>
+                <li><a href="#" target="_blank">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="curbox">
+    <div class="nav">
+    <a href="#">首页</a>
+    &nbsp;&nbsp;&gt;&nbsp;&nbsp;
+    <a href="#">图片集</a>
+    &gt;&nbsp;&nbsp;
+    <a href="#">亚洲</a>
+    <a href="#">伊朗</a>
+    </div>
+
+    <!--轮播-->
+    <div class="curbox-pic">
+
+        <div class="curbox-pic-box">
+            <ul class="curbox-pic-box-ul"></ul>
+        </div>
+        <!--按钮-->
+        <a class="curbox-pic-left" href="#"><i  id="b-left"><</i></a>
+        <a class="curbox-pic-right" href="#"><i id="b-right">> </i></a>
+    </div>
+    <div class="curbox-pic-word" style="display: block">
+        <a href="http://www.ixxss.net/eluosi"><span></span></a>
+        <button id="curbox-pic-word-x" type="button">×</button>
+    </div>
+
+    <div class="curbox-pic-zan">
+        <h3 id="curbox-pic-zan-day">2016.9.28国庆伊朗摄影团花絮</h3>
+        <a href="#" id="curbox-pic-zan-num"><span></span>207</a>
+        <img src="../imgs/logo/pwechat.png">
+    </div>
+</div>
+
+<!--底部-->
+<footer style="background:#212121">
+    <div class="footer">
+        <div class="st-footer">
+            <div class="corey-1200">
+                <div class="st-foot-menu">
+                    <a href="#" target="_blank" rel="nofollow">关于我们</a>
+                    <a href="#" target="_blank" rel="nofollow">联系我们</a>
+                    <a href="#" target="_blank" rel="nofollow">常见问题</a>
+                    <a href="#" target="_blank" rel="nofollow">合作伙伴</a>
+                    <a href="#" target="_blank" rel="nofollow">媒体报道</a>
+                    <a href="#" target="_blank" rel="nofollow">行摄学院</a>
+                    <a href="#" target="_blank" rel="nofollow">学习摄影</a>
+                </div>
+                <!--底部导航-->
+                <div class="st-foot-edit">
+                    <p style="text-align: center">24小时客户服务电话(免长途费)：40066-51731（我要去摄影）</p>
+                    <p class="foot-address">
+                        &nbsp;行行摄色 &nbsp;备案号：
+                        <a href="#" target="_blank" style="color:#fff">粤ICP备11072273</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        咨询电话：40066-51731（我要去摄影）　传真：0755-82530100　　地址：深圳市罗湖区金湖大厦601　　主办：行行摄色　　
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</footer>
+</div>
+
+</body>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<link rel="stylesheet" href="../styleshee/iconfont.css">
+<script src="../js/artTemplate.js"></script>
+<!--图片路径-->
+<script id="ylsy" type="text/htmlh">
+    <li>
+        <a href="#" id="curbox-pic-img">
+            <img src="http://www.ixxss.net{{img}}">
+        </a>
+    </li>
+
+</script>
+<!--获取图片-->
+<script>
+    $.ajax({
+        url: "../json/ylsy.json",
+        method: "get",
+        dataType: "json",
+        success: function (datas) {
+            console.log(datas);
+            $.each(datas, function (i, value) {
+                $(template("ylsy", value)).appendTo(".curbox-pic-box-ul");
+            })
+        }
+    });
+
+
+    var imgs=$("#curbox-pic-img");
+    //    图片出入方式
+    var index = 0,imgCount = imgs.length+21,t;
+    function toggleImg() {
+        var $li = $(".curbox-pic-box ul li");
+        $li.each(function (i, elem) {
+            var $item = $("#curbox-pic-img");
+            if (i == index) {
+                $(elem).fadeIn("fast");
+                $item.eq(i).addClass("#curbox-pic-img");
+            } else {
+                $(elem).fadeOut("fast");
+                $item.eq(i).removeClass(".curbox-pic-box ul li");
+            }
+        });
+    }
+    //    重复轮播
+    function scroll() {
+        index += 1;
+        if(index == imgCount)index = 0;
+        toggleImg();
+        t=setTimeout(scroll,2000);
+    }
+    //    按钮左右
+    t=setTimeout(scroll,2000);
+    var $btm =$("#b-left,#b-right").on({
+        "click":function () {
+            clearTimeout(t);
+            if($(this).attr("id") == "#b-left"){
+                index -= 1;
+                if(index<0) index = imgCount - 1;
+            }else{
+                index += 1;
+                if(index==imgCount) index=0;
+            }
+            toggleImg();
+            t=setTimeout(scroll,2000)
+        }
+    });
+    //    按钮隐藏显示
+    $(".curbox-pic").on({
+        "mouseenter": function () {
+            $btm.css("display", "inline-block");
+        },
+        "mouseleave": function () {
+            $btm.css("display", "none");
+        }
+
+    });
+
+</script>
+<script>
+    $(document).ready(function(){
+        var btn=$("#curbox-pic-word-x");
+
+        btn.click(function(){
+            $(this).closest(".curbox-pic-word").hide()
+
+        });
+    });
+
+
+</script>
+<!--悬浮标-->
+<!--topBtn-->
+<link rel="stylesheet" type="text/css" href="../css/myPop.css" />
+<script type="text/javascript" src="../js/myPop.js" ></script>
+<script>
+    var $LeftNav = lx_pop.createLeftNav();
+    var $li = lx_pop.createLi();
+    $LeftNav.css("display", "none").appendTo("body");
+    $li.css("display", "none").appendTo("body");
+    var isTopBtnShow = false;
+    window.onscroll = function () {
+        var t = document.documentElement.scrollTop || document.body.scrollTop;
+        if (t >= 35 && t <=50 &&!isTopBtnShow) {
+            $LeftNav.css("display", "block");
+            $li.css("display", "none");
+            isTopBtnShow = true;
+        } else if(t >50 && isTopBtnShow) {
+            $LeftNav.css("display", "none");
+            $li.css("display", "block");
+            isTopBtnShow = false;
+        } else if(t < 35 && isTopBtnShow) {
+            $LeftNav.css("display", "none");
+            $li.css("display", "none");
+            isTopBtnShow = false;
+        }
+    }
+</script>
+<!-- /topBtn-->
+</html>

@@ -1,0 +1,43 @@
+
+/*----FixedNav start----*/
+/*-- fixed --*/
+#fixed {
+	z-index: 9999;
+	position: fixed;
+	right: 5px;
+	bottom: 15%;
+}
+#fixed ul li {
+	display: block;
+	width: 50px;
+	height: 51px;
+	background: url(../imgs/kefu.png) no-repeat;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 1px;
+}
+#fixed ul .k1 { background-position: -64px -54px;}
+#fixed ul .k2 { background-position: 0 0; }
+#fixed ul .k2:hover { background-position: -64px 0;}
+#fixed ul .k4 { background-position: 0 -162px; }
+#fixed ul .k4:hover { background-position: -64px -162px;}
+#fixed ul #topbtn { background-position: 0 -216px;}
+#fixed ul #topbtn:hover { background-position: -64px -216px;}
+#fixed ul li .hidePic {
+	display: none;
+	position: absolute;
+	top: -120px;
+	left: -140px;
+}
+#fixed ul .k4:hover .hidePic {display: block}
+
+
+/*----FixedNav end----*/
+
+
+
+
+
+
+
+

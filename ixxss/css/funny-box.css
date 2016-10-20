@@ -1,0 +1,140 @@
+.funny{
+    width: 100%;
+    height: 364.2px;
+}
+/*标题文字css+按钮*/
+.funny-title{
+    width: 960px;
+    height: 63px;
+    margin: 0 auto;
+    text-align: center;
+}
+.funny-title h2{
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.funny-title-here{
+    font-size: 16px;
+    color: #959595;
+    margin-top: -10px;
+}
+.funny-title-next{
+    width: 80px;
+    height: 24px;
+    background-color: #0d68af;
+    display: inline-block;
+    float: right;
+    margin-top: -40px;
+}
+.funny-title-next:hover{
+    background-color: #3a83bc;
+}
+.funny-title-next #huan{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: none;
+    margin: 0 auto;
+    padding: 0;
+}
+/*图片框内容css*/
+.funny-content{
+    width: 960px;
+    height: 237.2px;
+    margin: 0 auto;
+    background-color: lawngreen;
+    margin-top: 21px;
+    overflow:hidden;
+}
+.funny-box{
+    width: 230px;
+    height: 100%;
+    float: left;
+    position: relative;
+    background-color: lightcoral;
+    margin-right: 10px;
+    transition: all 0.5s ease;
+    margin-top: 5px;
+}
+.funny-content-tour{
+    width: 230px;
+    height: 100%;
+    transition: all 0.5s ease;
+    display: inline;
+
+}
+.funny-box:hover{
+    transform: translateY(-4px);
+}
+/*图片*/
+.funny-content-tour-pic{
+    width: 100%;
+    height: 149.6px;
+    display: block;
+    background-color: grey;
+    float: left;
+}
+.funny-content-tour-pic img{
+    width: 100%;
+    height: 100%;
+}
+/*立即预定css+隐藏显示*/
+#funny-content-tour-pic-yuding{
+    position: absolute;
+    width: 114px;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    line-height:30px;
+    border-radius: 30px;
+    font-size: 24px;
+    border: 1px solid #fff;
+    top: 25%;
+    left: 25%;
+}
+.funny-content-tour-pic:hover a{
+    display: block !important;
+}
+/*文字css*/
+.funny-content-tour-title{
+    width: 100%;
+    height: 79.6px;
+    background-color: white;
+    display: block;
+    font-size: 14px;
+    overflow: hidden;
+}
+.funny-content-tour-title a{
+    width: 230px;
+    height: 32px;
+    text-decoration: none;
+    color: #333;
+    margin-left: 5px;
+    display: block;
+    font-family: "Microsoft Yahei","宋体","Arial Narrow",HELVETICA;
+}
+.funny-content-tour-title-price{
+    width: 97px;
+    height: 27px;
+    float: right;
+    background-color: #fd9319;
+    margin-right:10px ;
+}
+.funny-content-tour-title-price span{
+    color: #fff;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+}
+.price-time{
+    line-height: 27px;
+    margin-left: 10px;
+}
+.price-time span{
+    color: #fd9319;
+    line-height: 27px;
+}

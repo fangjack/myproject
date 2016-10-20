@@ -1,0 +1,499 @@
+body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+header {
+    display: inline-block;
+    width: 100%;
+    background-color: #212121;
+    text-align: center;
+    height: 88px;
+    line-height: 88px;
+    position: relative;
+}
+.w1200 {
+    display: inline-block;
+    width: 1200px;
+}
+.topLeft {
+    float: left;
+    width: 300px;
+}
+.topRight {
+    float: right;
+    width: 900px;
+}
+.logoBox {
+    height: 49px;
+    margin-top: 15px;
+}
+.topLeft .logoBox a {
+    color: #333333;
+}
+.topLeft .logoBox a img {display: block}
+.topRight .topTitle {
+    height: 40px;
+    line-height: 45px;
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+}
+.topRight .topTitle p { font-weight:bold;}
+.topRight .topTitle a { margin-left: 10px; color: #fff;}
+.topRight .topTitle a:hover {color: #0d68af;}
+.topRight ul {float: right; font-size: 16px}
+.topRight ul li {
+    float: left;
+    margin-left: 30px;
+    height: 48px;
+    line-height: 48px;
+    list-style-type: none;
+    margin-top: -16px;
+}
+.topRight ul li a {
+    padding: 0 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.topRight ul li a:hover {
+    color: #0d68af;
+    background: #fff;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+}
+.top_right ul li dl {
+    position: absolute;
+    z-index: 999;
+    width: 150px;
+    display: none;
+    background: #fff;
+    height: 200px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    left: -30px;
+}
+
+.top_right ul dl dd {
+    display: block;
+
+
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+.top_right ul dl dd a {
+    color: #959595;
+    display: block;
+}
+.top_right ul li:hover dl {
+    background: #fff;
+    display: block;
+}
+
+/*content*/
+.gophoto-content{
+    width: 100%;
+    color: #f6f6f6;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    float: left;
+    margin: auto;
+    margin-top: -20px;
+
+}
+.gophoto-content-nav{
+    width: 1160px;
+    height: 18px;
+    font-size: 14px;
+    margin: 15px auto;
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    font-family: "Microsoft Yahei","宋体","Arial Narrow",HELVETICA;;
+}
+.gophoto-content-nav a{
+    text-decoration: none;
+    color: black;
+}
+/*筛选*/
+.gophoto-content-choose{
+    margin: 74.5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 1200px;
+}
+.gophoto-content-choose-one{
+    float: left;
+    width: 800px;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+}
+.gophoto-content-choose-one-type{
+    color: black;
+    font-family: "Microsoft Yahei","宋体","Arial Narrow",HELVETICA;
+    font-size: 14px;
+    position: relative;
+    line-height: 50px;
+}
+.gophoto-content-choose-one-type dt{
+    width: 800px;
+    height: 61px;
+    color: #ff8a00;
+    display: inline-block;
+    border-bottom: 1px solid #f6f6f6;
+
+}
+.mdd{
+    margin-left: 70px;
+    margin-top: -47px;
+    position: absolute;
+}
+.mdd a{
+    display: block;
+    float: left;
+    padding: 0px 9px;
+    margin: 0px 3px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    color: black;
+}
+.mdd a:hover{
+    background-color: #00b7ee;
+    color: white;
+}
+.gophoto-content-choose-img{
+    width: 350px;
+    float: right;
+    margin-left: 10px;
+
+}
+.gophoto-content-choose-img img{
+    float: left;
+}
+.gophoto-content-choose-img #nan{
+    width: 210px;
+    height: 35px;
+    display: block;
+    background-color: #000;
+    position: relative;
+    color: white;
+    float: left;
+    margin-top: -35px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+}
+.gophoto-content-choose-img span{
+    width: 140px;
+    height: 35px;
+    font-weight: 600;
+    background-color: #ff8a00;
+    float: right;
+    margin-top: -35px;
+    line-height: 35px;
+}
+.gophoto-content-choose-img span a{
+    color: white;
+    text-align: center;
+    display: block;
+}
+.gophoto-content-pic{
+    margin: 74.5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+}
+.gophoto-content-pic-one{
+    float: right;
+    width: 1200px;
+    overflow: hidden;
+    background: #FFF;
+    margin: auto;
+    display: inline;
+    position: relative;
+}
+.gophoto-content-pic-one ul{
+    padding: 0;
+    margin-left: 5px;
+    position: relative;
+}
+.gophoto-content-pic-one ul li{
+    float: left;
+    position: relative;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.pic-one{
+    width: 580px;
+    height:386px;
+    float: left;
+    overflow: hidden;
+}
+.pic-one img{
+    transition: all 0.7s ease;
+}
+.pic-one img:hover{
+    transform:scale(1.1,1.1) ;
+}
+.pic-one-nav{
+    width: 580px;
+    height: 40px;
+    background-color: black;
+    float: left;
+    position: absolute;
+    opacity: 0.5;
+    margin-top: 346px;
+}
+.pic-one-name{
+    width: 240px;
+    height: 40px;
+    float: left;
+}
+.pic-one-name a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.pic-one-time{
+    width: 295px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    position: absolute;
+    margin-left: 380px;
+}
+.pic-one-time h4{
+    margin: 0;
+    margin-top: -40px;
+    margin-left: 100px;
+    position: relative;
+}
+.pic-one-nav-liji{
+    width: 137px;
+    height: 137px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 230px;
+    opacity: 0.5;
+}
+#pic-one-nav-liji-0{
+    width: 100px;
+    height: 35px;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    margin: 10px;
+    position: absolute;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 115px;
+    margin-left: 237px;
+}
+#pic-one-nav-price{
+    color:  #ff8a00;
+    position: absolute;
+    display: block;
+    margin-top: 180px;
+    margin-left: 240px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.gophoto-content-pic-123{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+}
+.gophoto-content-pic-123 ul{
+    height: 30px;
+    list-style-type: none;
+    margin-left: 500px;
+}
+.gophoto-content-pic-123 ul li{
+    width: 30px;
+    height: 30px;
+    float: left;
+    border: 1px solid  #959595;
+    text-align: center;
+    line-height: 28px;
+    color: #959595;
+    font-weight: 600;
+}
+.gophoto-content-pic-123 ul li:hover{
+    background-color: #ff8a00;
+    border: 1px solid #ff8a00;
+}
+.gophoto-content-pic-123 ul li:nth-of-type(4):hover{
+    border: 1px solid #ff8a00;
+    background-color: white;
+}
+.gophoto-content-pic-123 ul li a{
+    text-decoration: none;
+    color: #959595;
+    font-weight: 600;
+    display: block;
+    width: 30px;
+    height: 30px
+}
+.gophoto-content-pic-123 ul li a:hover{
+    color: white;
+}
+.gophoto-content-pic-unlike{
+    width: 100%;
+    height: 109px;
+    position: relative;
+    float: left;
+    background-color: #cacccd;
+    margin-top: 66px;
+    margin-bottom: 55px;
+}
+.gophoto-content-pic-unlike p{
+    float: left;
+    font-size: 32px;
+    color: #fff;
+    margin-top: 28px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: "Microsoft Yahei","宋体","Arial Narrow",HELVETICA;
+}
+.gophoto-content-pic-unlike a{
+    width: 262px;
+    height: 65px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    background-color: #959595;
+    display: block;
+    float: right;
+    font-size: 35px;
+    margin-top: 24px;
+    margin-right: 300px;
+}
+.gophoto-content-pic-unlike a:hover{
+    background-color: orange;
+}
+/*底部*/
+.footer {
+    width: 100%;
+    overflow: auto;
+    font-size: 14px;
+    color: #959595;
+    float: left;
+    display: inline-block;
+
+}
+.st-footer {
+    width: 100%;
+    min-width: 1200px;
+    padding-top: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #212121;
+    color: #959595;
+}
+.corey-1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.st-foot-menu {
+    width: 1200px;
+    font-size: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.st-foot-menu a {
+    color: #959595;
+    font-size: 14px;
+    display: inline-block;
+    height: 13px;
+    line-height: 13px;
+    padding: 0 10px;
+    border-left: 1px solid #666;
+}
+.st-foot-menu a:first-child {
+    border-left: 0;
+}
+.st-foot-edit {
+    width: 1200px;
+    line-height: 30px;
+    margin: 20px auto;
+    text-align: center;
+}
+/*-- module_label --*/
+.module {
+    display: block;
+}
+.verify_list {
+    width: 715px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.verify_list li:first-child {
+    margin-left: 0;
+}
+.verify_list li {
+    float: left;
+    margin-left: 20px;
+    width: 71px;
+    height: 35px;
+    background: url(../imgs/anquan.png) no-repeat
+}
+
+.st-link {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    min-width: 1200px;
+}
+.corey-1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.st-link-list {
+    width: 1200px;
+    padding-top: 20px;
+    border-top: 1px solid #626262;
+    margin: 0 auto;
+}
+.st-link-list dl {
+    width: 1200px;
+}
+.st-link-list dl dt {
+    color: #959595;
+    text-align: left;
+    float: left;
+    width: 80px;
+}
+.st-link-list dl dd {
+    float: right;
+    width: 1115px;
+    margin-top: 0;
+}
+.st-link-list dl dd a {
+    font-size: 12px;
+    display: inline-block;
+    height: 27px;
+    margin-right: 19px;
+    color: #959595;
+}

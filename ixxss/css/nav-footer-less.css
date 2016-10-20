@@ -1,0 +1,49 @@
+/* 超小屏幕（手机，小于 768px） */
+
+@media (max-width: 750px) {
+    .navbar-left,
+    .navbar-toggle,
+    .navbar-right,
+    .text-weixin img {
+        display: none;
+    }
+    .media-nav-btn {
+        display: block;
+        position: relative;
+        top: -3.4em;
+        right: -15px;
+    }
+    .media-nav-btn a {
+        height: 40px;
+        line-height: 28px;
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: white !important;
+        background-color: #FC6E51 !important;
+        border-radius: 6px;
+    }
+}
+
+/* 小屏幕（平板，大于等于 768px，小于等于992，基于bootstrap） */
+
+@media (min-width:750px) and (max-width: 992px) {
+    .navbar-toggle,
+    .navbar-right {
+        display: none;
+    }
+    .media-nav-btn {
+        display: none;
+    }
+    .footer h4 {
+        margin-top: 14px;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+
+@media (min-width: 992px) {
+    .media-nav-btn {
+        display: none;
+    }
+}

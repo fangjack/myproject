@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册 - 行摄摄友会 - 行摄摄友会,系统学摄影,前后期结合,从零到精通 - Powered By 行摄摄友会 </title>
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/css1.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-blue.css">
+    <link rel="stylesheet" type="text/css" href="../css/es-icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/main-blue.css">
+    <script type="text/javascript" src="../bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="es-wrap">
+    <header class="es-header navbar">
+        <div class="navbar-header">
+            <div class="visible-xs navbar-mobile">
+                <a href="#" class="navbar-more"><i class="es-icon es-icon-menu" id="onclick"></i></a>
+                <div class="html-mask"></div>
+                <div class="nav-mobile" id="nav-mobile" style="height: 628px;">
+                    <form class="navbar-form" action="" method="get">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="搜索" name="q">
+                            <button class="button es-icon es-icon-search"></button>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" target="_blank">100元学摄影</a></li>
+                        <li><a href="#" target="_blank">全部视频</a></li>
+                        <li><a href="#" target="_blank">往期直播</a></li>
+                        <li><a href="#" target="_blank">国外热门摄影线路推荐 </a></li>
+                        <li><a href="#" target="_blank">会员必看 </a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="/" class="navbar-brand"><img src="../imgs/header/headerlogo-left.png" alt=""></a>
+        </div>
+        <nav class="collapse navbar-collapse">
+            <ul class="nav navbar-nav hidden-xs">
+                <li><a href="#" target="_blank">100元学摄影</a></li>
+                <li><a href="#" target="_blank">全部视频</a></li>
+                <li><a href="#" target="_blank">往期直播</a></li>
+                <li><a href="#" target="_blank">国外热门摄影线路推荐 </a></li>
+                <li><a href="#" target="_blank">会员必看 </a></li>
+            </ul>
+            <div class="navbar-user">
+                <ul class="nav user-nav">
+                    <li id="nav-hover" class="user-avatar-li nav-hover visible-xs">
+                        <a href="#" class="dropdown-toggle">
+                            <img class="avatar-xs" src="../imgs/paging-studyshoot/avatar.png" alt="">
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">登录</a></li>
+                            <li><a href="#">注册</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden-xs"><a href="#">登录</a></li>
+                    <li class="hidden-xs"><a href="#">注册</a></li>
+                </ul>
+                <form class="navbar-form navbar-right hidden-xs hidden-sm" action="#" method="get">
+                    <div class="form-group">
+                        <input id="searchdeformation" class="form-control" name="q" placeholder="搜索">
+                        <button class="button es-icon es-icon-search"></button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div id="content-container" class="container">
+        <div class="es-section login-section">
+            <div class="logon-tab clearfix">
+                <a href="TheLogin.html">登录帐号</a>
+                <a class="active">注册帐号</a>
+            </div>
+            <div class="login-main">
+                <form id="register-form" method="post" action="" novalidate="novalidate" data-widget-cid="widget-0">
+                    <div class="form-group mbl">
+                        <label class="control-label required" for="register_email">邮箱地址</label>
+                        <div class="controls">
+                            <input type="email" id="register_email" name="email" required="required" class="form-control input-lg" data-url="/register/email/check" placeholder="填写你常用的邮箱作为登录帐号" data-widget-cid="widget-1" data-explain="" />
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="form-group mbl">
+                        <label class="control-label required" for="register_nickname">用户名</label>
+                        <div class="controls">
+                            <input type="text" id="register_nickname" name="nickname" required="required" class="form-control input-lg" data-url="/register/nickname/check" placeholder="中、英文均可，最长18个英文或9个汉字" data-widget-cid="widget-2" data-explain="" />
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="form-group mbl">
+                        <label class="control-label required" for="register_password">密码</label>
+                        <div class="controls">
+                            <input type="password" id="register_password" name="password" required="required" class="form-control input-lg" placeholder="5-20位英文、数字、符号，区分大小写" data-widget-cid="widget-3" data-explain="" />
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="form-group mbl">
+                        <label class="control-label required">邀请码<span class="text-success">（选填）</span></label>
+                        <div class="controls">
+                            <input type="text" name="invite_code" required="required" class="form-control input-lg invitecode" data-url="/register/invitecode/check" placeholder="如果您有邀请码，请填写您的邀请码" data-widget-cid="widget-4" data-explain="" />
+                            <div class="help-block" style="display:none;"></div>
+                        </div>
+                    </div>
+                    <div class="form-group mbl">
+                        <div class="controls">
+                            <button type="submit" id="register-btn" data-submiting-text="正在提交" class="btn btn-primary btn-lg btn-block">注册</button>
+                        </div>
+                    </div>
+                    <input type="hidden" name="captcha_enabled" value="0" />
+                    <input type="hidden" name="_csrf_token" value="39472ce456977c747957940810228c1f12f8cad9" />
+                </form>
+                <div class="social-login">
+                    <span> <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx6a9a8bf6a12565fe&response_type=code&redirect_uri=http%3A%2F%2Fk.xingshe.com%2Flogin%2Fbind%2Fweixinweb%2Fcallback&scope=snsapi_login" class="social-icon social-weixin"> <i class="es-icon es-icon-weixin"></i> </a> </span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="es-footer">
+        <div class="copyright">
+            <div class="container">
+                <a class="mlm" href="http://k.xingshe.com/archive/course">课程存档</a>
+                <div class="mts">
+                    <a class="mlm" href="http://www.miibeian.gov.cn/" target="_blank">
+                        粤ICP备16069208号
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+<script>
+    var $click = $('#onclick'),$html = $('html'),$wrap = $('.es-wrap'),
+            $mask = $('.html-mask'),$nav = $('#nav-mobile'),
+            $hover = $('#nav-hover'),$search = $('#searchdeformation');
+    console.log($hover);
+    $click.on("click", function () {
+        $html.toggleClass('nav-active');
+        $wrap.toggleClass('nav-active');
+        $mask.toggleClass('active');
+        $nav.toggleClass('active');
+    });
+    $hover.hover(function () {
+        $(this).toggleClass('open');
+    });
+
+    $search.on("click" ,function () {
+        $(this).addClass('active').attr('placeholder', '');
+    }).blur(function () {
+        $(this).removeClass('active').attr('placeholder', '搜索');
+    });
+</script>
+
+</html>

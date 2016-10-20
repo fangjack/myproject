@@ -4,5 +4,5 @@ body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
     font-family: "Microsoft Yahei","宋体","Arial Narrow",HELVETICA;
 }
 body {font-size: 14px}
-a { text-decoration: none }
-ol, ul, li { list-style: none;}
+a { color: #333; text-decoration: none }
+ol, ul, li, dl, dt, dd { list-style: none;}
